@@ -9,6 +9,8 @@ export default class Ball {
         this.heightGame = game.heightGame;
         this.game = game;
         this.reset();
+        this.array = [...document.querySelectorAll('.lives > img')];
+        console.log(this.array);
     }
 
     reset() {
@@ -50,6 +52,7 @@ export default class Ball {
 
         if (this.position.y + this.size > this.heightGame) { // touching the bottom
             this.game.lives--;
+            this.array[this.game.lives].style.display = 'none';
             this.reset();
         }
     }

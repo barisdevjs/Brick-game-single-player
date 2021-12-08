@@ -12,3 +12,31 @@
 img { /* if you choose the id of ball it will display two balls one in canvas other in HTML*/
     display: none;
 }
+
+
+.heart {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 100px;
+    top: 60px;
+}
+
+#two {
+    left: 180px;
+}
+
+.lives > p {
+    top:0px;
+    left: 150px;
+    position: absolute;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.hide {
+    display: none;
+}
