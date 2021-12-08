@@ -1,0 +1,14 @@
+
+
+
+#gameScreen {
+    width: 800px;
+    height: 600px;
+    border: 1px solid black;
+    margin: auto;
+    display: flex;
+}
+
+img { /* if you choose the id of ball it will display two balls one in canvas other in HTML*/
+    display: none;
+}
