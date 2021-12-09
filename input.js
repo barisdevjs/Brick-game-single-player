@@ -1,3 +1,4 @@
+import Game from "./game.js";
 
 export default class InputHandler {
     constructor(player,game) {

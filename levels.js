@@ -10,7 +10,7 @@ export  function buildLevel(game, level) { // we are taking the brick constructo
             if (brick === 1) {
                 let position = {
                     x: 50 * brickIndex,
-                    y: 70 + 24 * rowIndex
+                    y: 50 + 24 * rowIndex
                 }
                 bricks.push(new Brick(game, position))
             }
@@ -20,9 +20,9 @@ export  function buildLevel(game, level) { // we are taking the brick constructo
 }
 
 export const level1 = [
-    [0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1,1], 
-    [1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0,1]
-    
+    [0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1,1], // 16 * 4 2D array
+    [1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0,1],
+    [1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1,0],
     
 ]
 
@@ -31,3 +31,4 @@ export const level2 = [
     [1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1,1],
     Array.from({ length: 16 }, () => 1 * Math.random() > 0.5 ? 1 : 0)
 ]
+console.log(level2)
