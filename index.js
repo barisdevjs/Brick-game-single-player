@@ -17,7 +17,6 @@ let lastTime = 0;
 function gameLoop(timestamp) {
     let deltaTime = timestamp - lastTime; // difference between current time and last time
     lastTime = timestamp;
-
     ctx.clearRect(0, 0, widthGame, heightGame);
     game.update(deltaTime);
     game.draw(ctx);
