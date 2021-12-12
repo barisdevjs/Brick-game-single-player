@@ -10,12 +10,11 @@ export default class Ball {
         this.game = game;
         this.reset();
         this.array = [...document.querySelectorAll('.lives > img')];
-        console.log(this.array);
     }
 
     reset() {
-        this.position = {x:110, y:310};
-        this.speed = {x:3, y:5};
+        this.position = {x:10, y:10};
+        this.speed = {x:4, y:6};
     }
 
     draw(ctx) {

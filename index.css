@@ -1,12 +1,20 @@
-
+body {
+    background: linear-gradient(to right, #7ae5ec 0%, #86f17d 100%);
+    display: flex;
+    justify-content: center;
+    align-self: start;
+    flex-direction: row;
+    font-family: sans-serif;
+}
 
 
 #gameScreen {
     width: 800px;
     height: 600px;
     border: 1px solid black;
-    margin: auto;
+    margin-left: 12vw;
     display: flex;
+    
 }
 
 img { /* if you choose the id of ball it will display two balls one in canvas other in HTML*/
@@ -34,9 +42,23 @@ img { /* if you choose the id of ball it will display two balls one in canvas ot
     left: 150px;
     position: absolute;
     font-size: 30px;
-    font-family: sans-serif;
+    
 }
 
-.hide {
-    display: none;
+h2 {
+    top:130px;
+    left: 115px;
+    position: absolute;
+    font-size: 30px;
+    
 }
+
+h3, h3 > * {
+    margin-top: 40vh;
+    font-size: 2rem;
+}
+
+
+
+
+
